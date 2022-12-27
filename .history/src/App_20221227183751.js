@@ -10,7 +10,7 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState('');
 
   return (
     <BrowserRouter>
