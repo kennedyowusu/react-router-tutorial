@@ -6,12 +6,13 @@ import Products from "./pages/Products";
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/products" element={<Products />} />
-            
-      </Routes>
+    <Routes>
+      <Route path="/" element={<Home />}>
+          <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
+          
+      </Route>
+    </Routes>
     
     </BrowserRouter>
   );
